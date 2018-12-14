@@ -11,6 +11,7 @@
   <style>
     /* Move down content because the fixed navbar is 3.5rem tall */
         body {
+          overflow: hidden;
             min-height: 75rem;
             padding-top: 3.5rem;
         }
@@ -32,11 +33,31 @@
               width: 100%;
               text-align: center;
             }
-	
+
+            .outer {
+      		    display: table;
+      		    position: absolute;
+      		    height: 90%;
+      		    width: 100%;
+      	    }
+
+      	    .middle {
+      	        display: table-cell;
+      	        vertical-align: middle;
+      	    }
+
+      	    .inner {
+      	        margin-left: auto;
+      	        margin-right: auto;
+      	        width: 100%;
+      	        text-align: center;
+      	    }
+
+
     </style>
 </head>
 
-<body>
+<body class="align-middle">
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-success">
     <a href="../index.html"><span class="navbar-brand">Mattia Effendi</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Abilita la navigazione">
@@ -54,7 +75,7 @@
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarPortfolioDropdownMenu">
             <a class="dropdown-item" href="imarks.html">iMarks</a>
             <a class="dropdown-item" href="argo.html">Argo</a>
-            <a class="dropdown-item" href="spesa.html">ListaDellaSpesa</a>			
+            <a class="dropdown-item" href="spesa.html">ListaDellaSpesa</a>
           </div>
         </li>
         <li class="nav-item">
@@ -72,55 +93,62 @@
             <a class="dropdown-item" href="en.html"><img src="img/eng.jpg" class="img-responsive" height="20%" width="20%"> ? English</a>
           </div>
         </li>
+    </div>
   </nav>
+
+  <div class="inner">
+    <div class="outer">
+      <div class="middle">
+        <h1>I miei progetti</h1>
+        <hr width="25%" />
+        <div class="container text-center vertical-center">
+          <div class="card-deck text-center">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../img/iMarks.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">iMarks <span class="badge badge-pill badge-success">Novit&agrave</span></h5>
+                <hr width="50%">
+                <p class="card-text">Gestisci i tuoi voti, calcola le medie, imposta degli obiettivi.<br />Ora con importazione automatica dei voti da Argo.</p>
+                <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../img/Argo.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Argo <span class="badge badge-pill badge-warning">W.I.P.</span></h5>
+                <hr width="50%">
+                <p class="card-text">Il registro Argo, su Telegram.</p>
+                <br />
+                <br />
+                <br />
+                <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="../img/Spesa.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">ListaDellaSpesa <span class="badge badge-pill badge-warning">W.I.P.</span></h5>
+                <hr width="50%">
+                <p class="card-text">Gestisci le tue liste delle spesa, utilizzale dove vuoi, anche da web.</p>
+                <br />
+                <br />
+                <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
+              </div>
+            </div>
+          </div>
+          <br / />
+          <br / />
+          <br / />
+          <br / />
+        </div>
+      </div>
+    </div>
   </div>
-  </nav>
-  <br />
-  <br />
-  <br />
+</body>
 
-      <div class="container">
-	<div class="card-deck text-center">
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="img/iMarks.png" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">iMarks    <span class="badge badge-pill badge-success">Novit&agrave</span></h5>
-	<hr width="50%">
-    <p class="card-text">Gestisci i tuoi voti, calcola le medie, imposta degli obiettivi.<br />Ora con importazione automatica dei voti da Argo.</p>
-    <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Argo    <span class="badge badge-pill badge-warning">W.I.P.</span></h5>
-	<hr width="50%">	
-    <p class="card-text">Il registro Argo, su Telegram.</p>
-	<br />
-	<br />
-	<br />
-    <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">ListaDellaSpesa    <span class="badge badge-pill badge-warning">W.I.P.</span></h5>
-	<hr width="50%">
-    <p class="card-text">Gestisci le tue liste delle spesa, utilizzale dove vuoi, anche da web.</p>
-	<br />
-	<br />
-    <a href="#" class="btn btn-success">Pi&ugrave dettagli »</a>
-  </div>
-</div>
-</div>
-</div>
-
-
-
-<footer class="container-fluid text-center">
+<footer class="footer text-center">
   <div class="text-center text-muted">
     Mattia Effendi - 2018
   </div>
@@ -148,6 +176,6 @@
 
 
 
-  <script src="../js/jquery-3.2.1.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery-3.2.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
