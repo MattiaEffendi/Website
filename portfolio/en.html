@@ -9,28 +9,29 @@
 
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <style>
-    /* Move down content because the fixed navbar is 3.5rem tall */
+  i.link:hover {
+    color: #339933;
+  }
 
-        i.link:hover {
-          color: #339933;
-        }
+  a {
+    color: inherit;
+  }
 
-        a {
-          color: inherit;
-        }
-
-        html {
-          position: relative;
-          min-height: 100%;
-        }
-        body {
-          /*min-height: 75rem;*/
-          padding-top: 3.5rem;
-        }
-        footer {
-          background-color: #f2f2f2;
-          padding: 25px;
-        }
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /*min-height: 75rem;*/
+    padding-top: 3.5rem;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+    background-color: #f2f2f2;
+  }
     </style>
 </head>
 
@@ -117,7 +118,7 @@
 
 <br />
 <br />
-        <footer class="container-fluid text-center">
+        <footer class="container-fluid text-center footer">
           <div class="text-center text-muted">
             Mattia Effendi - 2018
           </div>
