@@ -3,7 +3,7 @@
 My website repo and source code.
 
 ### General Infos
-Written with the Bootstrap 4 framework.
+Written with the Bootstrap 3 framework.
 
 ### Repo clonation
 If you want to clone the repo on your server, you just only have to do these commands:
@@ -11,7 +11,7 @@ If you want to clone the repo on your server, you just only have to do these com
     $ sudo apt-get install git
     $ git clone github.com/MattiaEffendi/Website
     $ cd Website
-    
+
 To update the repo with the new files, just run this simple command:
 
     $ git pull
